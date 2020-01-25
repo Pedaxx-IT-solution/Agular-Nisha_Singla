@@ -1,0 +1,28 @@
+<p>binding works!</p>
+
+<h1> {{pageview}}  </h1>
+
+<img src="{{imageurl}}"/>
+
+<button disabled={{buttovariable}}  > click</button>
+
+<h2>property binding</h2>
+
+<img [src]="imageurl"/>
+
+<button [disabled]="buttovariable"  > click</button>
+
+
+<button (click)="changetitle()"  >click me to change </button>
+
+<input type="text" [(ngModel)]="username" />
+
+<h2>Welcome {{username}}</h2>
+
+
+<div>
+<ul>
+    <li  *ngFor="let user of users"  > {{users}}</li>
+
+</ul>
+</div>
